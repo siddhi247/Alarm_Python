@@ -12,6 +12,7 @@ import threading
 
 def display_current_time():
     while True:
+
         current_time = time.strftime("%H:%M:%S")
         current_date = time.strftime("%Y-%m-%d")
         label4.config(text=f"Current time: {current_time}\nCurrent date: {current_date}", font=('times', 12))
@@ -128,3 +129,5 @@ current_time_thread = threading.Thread(target=display_current_time)
 current_time_thread.start()
 
 window.mainloop()
+
+#end
